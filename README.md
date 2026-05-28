@@ -18,5 +18,17 @@ Voor de visualisatie van de resultaten is een volcano plot gemaakt met behulp va
 De gebruikte scrips(link), ruwe data(link) en tussen bestanden zijn opgenomen in de githubpagina.
 
 
-# Resultaten
 
+# Resultaten
+De RNA sequencingsanalyse laat zien dat er duidelijke verschillen in genexpressie bestaan tussen RA patiënten en de gezonde controle groep. De volcano plot (figuur...) toont aan dat veel genen siginficant veranderd zijn, zowel upregulated als downregulated, waarbij vooral immuungerelateerde genen opvallen.
+De GO verrijkingsannalyse bevestigd het beeld dat de volcano plot schetst en laat zien dat de betrokken genen voornamelijk geassocieerd zijn met de immuunrespons, zoals lymfocyten, adaptieve imuunrespons en immuunreceptor signalen. Dit kan wijzen op een sterke activatie van zowel T als B cellen in RA.
+De KEGG pathway ondersteund de bevindingen van de GO analyse en de volcano plot en toont een verrijking van de belangrijke singaalroutes zoals MAPK en PI3K-AKt die en belangrijke rol spelen in ontsteking. Daarnaast worden er pathways gevonden die overlappen met infectiereponsen, wat duidt op een algemene immuunactiviteit.
+
+<img width="400" height="500" alt="Volcanoplot_Casus(RA)" src="https://github.com/user-attachments/assets/41db9e32-b598-45cc-82f7-49a47df82ecd" />
+
+*figuur... *
+
+# Conclusie
+
+## Samengevat
+De resulaten laten zien dat reumatoïde artritis gekenmerkt is wordt door sterke veranderingen in genexpressie, waarbij imuun en ontstekkingsprocessen de meeste veranderingen lieten zien.
