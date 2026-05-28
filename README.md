@@ -6,10 +6,17 @@ Reumatoïde artritis (RA) is een chronische auto-imuunziekte waarbij het imuunsy
 De exacte oorzak van RA is nig niet volledig bekend, maar onderzoek laat zien dat zowel genetische als omgevingsfactoren een belangrijke rol spelen. Risicofactoren zoals roken, overgewicht en bepaalde infecties kunnen bijdragen aan het onstaan van de ziekete. Daarnaast speelthet immuunsysteem een centrale rol bij de ontwikkeling van chronische ontstekingen in synoviale weefsels van gewrichten.(Romão & Fonseca, 2021)
 
 Bij RA spelen verschillendde intracellulaire signaalroutes een belangrijke rol in het ontstaan en onderhouden van ontstekingen. Een van de deze signaal routes is de JAK-STAT signaalroute. Deze pathway wordt geactiveerd door cytokinen zoals interleukine 6 (IL-6) en interferonen. Activatie van JAK-STAT zorgt ervoor dat onstekingsgenen in de celkern worden geactiveer, waardo chromische onstekingen in de gewrichten ontstaan(Ciobanu et al., 2020). Het doel van dit onderzoek is om met behulp van RNA-sequencingsdata, geannalyseerd in R, te bepalen welke genen en biologische pathways significant verschillen in expressie tussen synoviumbyopten van RA patiënten en gezonden controles.
-## beheren
+## Beheren
 
-# methode
-De ruwe data zijn verkregen uit een eerder onderzoek 
+# Methode
+Voor de analyse is er gerbuik gemaakt van RNA seqeucingdata afkomstig van synoviumbiopten. De data is afkomstig van vier gezonde personen en vier patiënten met reumatoïde artritis (RA). De verkregen ruwe sequencingdata werden aangeleverd als FastQ bestanden (link) Met behulp van het Rsubread pakket (versie 2.24.0) zijn de reads uitgelijnd tegen het humane referentie genoom GRCh38.p14 (link). Voor elk bestand werd vervolgens een BAM bestand gemaakt. Deze bestanden worden gesorteerd en geïdexeerd.
 
-# resultaten
-Om een weergave te krijgen van de 
+Met behulp van de functie Featurecounts werd het aantal reads per gen bepaald op basis van de beschikbare GTF annotatie. De verkregen data werden samengevoegd tot een countmatrix om vervolgens gekoppeld te worden aan de bijbhorende metadata van de monsters. Om verschillen in genexpressie tussen beide groepen te onderzoeken, is een differentiële genexpressie annalyse uitgevoerd met het pakket DEseq2 (versie 1.50.2). Hierbij werd de genexpressie van genen in de RA groep vergeleken met de controlegropen. Genen met ene aangepaste P waarde <0,05 worden beschouwd als significant verschillend in expressie.
+
+Voor de visualisatie van de resultaten is een volcano plot gemaakt met behulp van het EnhancedVolcano pakket (versie 1.28.2). Verder is er een Gene Ontology(GO) analyse en een KEGG-pathway analyse uitgevoerd op de significante genen om inzicht te krijgen in de signaalroutes en biologische processen die betrokken zijn bij Reumatoïde artritis(RA).
+
+De gebruikte scrips(link), ruwe data(link) en tussen bestanden zijn opgenomen in de githubpagina.
+
+
+# Resultaten
+
