@@ -17,7 +17,8 @@ Voor de visualisatie van de resultaten is een volcano plot gemaakt met behulp va
 
 De gebruikte scrips(link), ruwe data(link) en tussen bestanden zijn opgenomen in de githubpagina.
 
-
+<img width="1920" height="1080" alt="Flowchart" src="https://github.com/user-attachments/assets/7998f721-05a1-4560-8429-6b51962a7acb" />
+* figuur 1 flowchart*
 
 # Resultaten
 De RNA sequencingsanalyse laat zien dat er duidelijke verschillen in genexpressie bestaan tussen RA patiënten en de gezonde controle groep. De volcano plot (figuur...) toont aan dat veel genen siginficant veranderd zijn, zowel upregulated als downregulated, waarbij vooral immuungerelateerde genen opvallen.
