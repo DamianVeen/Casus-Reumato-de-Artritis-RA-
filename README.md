@@ -36,13 +36,13 @@ De RNA sequencingsanalyse laat zien dat er duidelijke verschillen in genexpressi
 
 De GO verrijkingsannalyse bevestigd het beeld dat de volcano plot schetst en laat zien dat de betrokken genen voornamelijk geassocieerd zijn met de immuunrespons, zoals lymfocyten, adaptieve imuunrespons en immuunreceptor signalen. Dit kan wijzen op een sterke activatie van zowel T als B cellen in RA.
 
-<img width="2400" height="1800" alt="GO_plot" src="https://github.com/user-attachments/assets/367c1b9c-4a4b-4077-9530-7fb51afd0e56" />
+<img width="2000" height="1500" alt="GO_plot" src="https://github.com/user-attachments/assets/367c1b9c-4a4b-4077-9530-7fb51afd0e56" />
 
 *figuur 2 GO annalyse*
 
 De KEGG pathway ondersteund de bevindingen van de GO analyse en de volcano plot en toont een verrijking van de belangrijke singaalroutes zoals MAPK en PI3K-AKt die en belangrijke rol spelen in ontsteking. Daarnaast worden er pathways gevonden die overlappen met infectiereponsen, wat duidt op een algemene immuunactiviteit.
 
-<img width="2400" height="1800" alt="kegg_pathway_plot" src="https://github.com/user-attachments/assets/a0b3eac1-d284-4eb8-8797-da3767832458" />
+<img width="2000" height="1500" alt="kegg_pathway_plot" src="https://github.com/user-attachments/assets/a0b3eac1-d284-4eb8-8797-da3767832458" />
 
 *figuur 3 KEGG pathway*
 
