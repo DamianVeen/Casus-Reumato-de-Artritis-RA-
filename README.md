@@ -1,5 +1,4 @@
-# Casus-Reumato-de-Artritis-RA-
-Verwerkte en onverwerkte data vanuit een Reuma Artritis (RA) onderzoek met behulp van R
+# Differentiële genexpressie in synovium bij reumatoïde artritis toont dominante immuun- en ontstekingsprocessen
 # Inleiding
 Reumatoïde artritis (RA) is een chronische auto-immuunziekte waarbij het immuunsysteem gezonde gewrichten aanvalt. Hierdoor ontstaan ontstekingen in onder andere de handen, polsen en knieën, wat kan leiden tot stijfheid, pijn en blijvende gewrichtsklachten. Naast gewrichtsklachten kan RA ook andere organen aantasten, zoals de longen en het hart. De ziekte heeft daardoor een grote invloed op de kwaliteit van leven van patiënten. Wereldwijd komt RA voor bij ongeveer 0,5% van de bevolking. De aandoening wordt vaker gezien bij vrouwen dan bij mannen (Almutairi et al., 2020).
 
