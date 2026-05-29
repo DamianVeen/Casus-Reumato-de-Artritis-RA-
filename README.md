@@ -13,7 +13,7 @@ Bij RA spelen verschillende intracellulaire signaalroutes een belangrijke rol in
 * `Ruwe_Data`- Hier staan de ruwe data en de BAM bestanden die gemaakt zijn.
 
 # Methode
-Voor de analyse is er gebruikt gemaakt van RNA-seqeucingdata afkomstig van synoviumbiopten. De data is afkomstig van vier gezonde personen en vier patiënten met reumatoïde artritis (RA). De verkregen ruwe sequencingdata werden aangeleverd als [FastQ bestanden](Ruwe_Data\Data_raw-RA) Met behulp van het Rsubread pakket (versie 2.24.0) zijn de reads uitgelijnd tegen het humane referentie genoom [GRCh38.p14](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/). Voor elk bestand werd vervolgens een BAM bestand gemaakt. Deze bestanden worden gesorteerd en geïdexeerd.
+Voor de analyse is er gebruikt gemaakt van RNA-seqeucingdata afkomstig van synoviumbiopten. De data is afkomstig van vier gezonde personen en vier patiënten met reumatoïde artritis (RA). De verkregen ruwe sequencingdata werden aangeleverd als [FastQ bestanden](Ruwe_Data\Data_raw-RA). Met behulp van het Rsubread pakket (versie 2.24.0) zijn de reads uitgelijnd tegen het humane referentie genoom [GRCh38.p14](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/). Voor elk bestand werd vervolgens een BAM bestand gemaakt. Deze bestanden worden gesorteerd en geïdexeerd.
 
 Met behulp van de functie FeatureCounts werd het aantal reads per gen bepaald op basis van de beschikbare GTF-annotatie. De verkregen data werden samengevoegd tot een countmatrix om vervolgens gekoppeld te worden aan de bijbehorende metadata van de monsters. Om verschillen in genexpressie tussen beide groepen te onderzoeken, is een differentiële genexpressieanalyse uitgevoerd met het pakket DESeq2 (versie 1.50.2). Hierbij werd de genexpressie van genen in de RA-groep vergeleken met de controlegroepen. Genen met een aangepaste p-waarde < 0,05 worden beschouwd als significant verschillend in expressie.
 
@@ -35,13 +35,13 @@ De RNA-sequencinganalyse laat zien dat er duidelijke verschillen in genexpressie
 
 De GO-verrijkingsanalyse bevestigt het beeld dat de volcano plot schetst en laat zien dat de betrokken genen voornamelijk geassocieerd zijn met de immuunrespons, zoals lymfocyten, adaptieve immuunrespons en immuunreceptorsignalen. Dit kan wijzen op een sterke activatie van zowel T- als B-cellen in RA.
 
-<img width="2000" height="1500" alt="GO_plot" src="https://github.com/user-attachments/assets/367c1b9c-4a4b-4077-9530-7fb51afd0e56" />
+<img width="400" height="350" alt="GO_plot" src="https://github.com/user-attachments/assets/367c1b9c-4a4b-4077-9530-7fb51afd0e56" />
 
 *figuur 2 GO annalyse*
 
 De KEGG pathway ondersteunt de bevindingen van de GO-analyse en de volcano plot en toont een verrijking van belangrijke signaalroutes zoals MAPK en PI3K-Akt, die een belangrijke rol spelen in ontsteking. Daarnaast worden er pathways gevonden die overlappen met infectieresponsen, wat duidt op een algemene immuunactiviteit.
 
-<img width="2000" height="1500" alt="kegg_pathway_plot" src="https://github.com/user-attachments/assets/a0b3eac1-d284-4eb8-8797-da3767832458" />
+<img width="400" height="350" alt="kegg_pathway_plot" src="https://github.com/user-attachments/assets/a0b3eac1-d284-4eb8-8797-da3767832458" />
 
 *figuur 3 KEGG pathway*
 
