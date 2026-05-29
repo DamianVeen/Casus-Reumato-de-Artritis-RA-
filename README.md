@@ -7,6 +7,11 @@ De exacte oorzak van RA is nig niet volledig bekend, maar onderzoek laat zien da
 
 Bij RA spelen verschillendde intracellulaire signaalroutes een belangrijke rol in het ontstaan en onderhouden van ontstekingen. Een van de deze signaal routes is de JAK-STAT signaalroute. Deze pathway wordt geactiveerd door cytokinen zoals interleukine 6 (IL-6) en interferonen. Activatie van JAK-STAT zorgt ervoor dat onstekingsgenen in de celkern worden geactiveer, waardo chromische onstekingen in de gewrichten ontstaan(Ciobanu et al., 2020). Het doel van dit onderzoek is om met behulp van RNA-sequencingsdata, geannalyseerd in R, te bepalen welke genen en biologische pathways significant verschillen in expressie tussen synoviumbyopten van RA patiënten en gezonden controles.
 ## Beheren
+`bronnen` - Hier staat een word document met de verwijzingen naar alle gebruikte bronnen.
+`grafieken`- Hier staan alle gemaakt grafieken.
+`R script`- Hier staan de gebruikte R scripten.
+`Ruwe data`- Hier staan de ruwe data en de BAM bestanden die gemaakt zijn.
+
 
 # Methode
 Voor de analyse is er gerbuik gemaakt van RNA seqeucingdata afkomstig van synoviumbiopten. De data is afkomstig van vier gezonde personen en vier patiënten met reumatoïde artritis (RA). De verkregen ruwe sequencingdata werden aangeleverd als FastQ bestanden (link) Met behulp van het Rsubread pakket (versie 2.24.0) zijn de reads uitgelijnd tegen het humane referentie genoom GRCh38.p14 (link). Voor elk bestand werd vervolgens een BAM bestand gemaakt. Deze bestanden worden gesorteerd en geïdexeerd.
@@ -19,17 +24,22 @@ De gebruikte scrips(link), ruwe data(link) en tussen bestanden zijn opgenomen in
 
 <img width="1920" height="1080" alt="Flowchart" src="https://github.com/user-attachments/assets/7998f721-05a1-4560-8429-6b51962a7acb" />
 
-* figuur 1 flowchart *
+*figuur 1. flowchart*
 
 # Resultaten
-De RNA sequencingsanalyse laat zien dat er duidelijke verschillen in genexpressie bestaan tussen RA patiënten en de gezonde controle groep. De volcano plot (figuur...) toont aan dat veel genen siginficant veranderd zijn, zowel upregulated als downregulated, waarbij vooral immuungerelateerde genen opvallen.
-De GO verrijkingsannalyse bevestigd het beeld dat de volcano plot schetst en laat zien dat de betrokken genen voornamelijk geassocieerd zijn met de immuunrespons, zoals lymfocyten, adaptieve imuunrespons en immuunreceptor signalen. Dit kan wijzen op een sterke activatie van zowel T als B cellen in RA.
-De KEGG pathway ondersteund de bevindingen van de GO analyse en de volcano plot en toont een verrijking van de belangrijke singaalroutes zoals MAPK en PI3K-AKt die en belangrijke rol spelen in ontsteking. Daarnaast worden er pathways gevonden die overlappen met infectiereponsen, wat duidt op een algemene immuunactiviteit.
 
+De RNA sequencingsanalyse laat zien dat er duidelijke verschillen in genexpressie bestaan tussen RA patiënten en de gezonde controle groep. De volcano plot (figuur 2) toont aan dat veel genen siginficant veranderd zijn, zowel upregulated als downregulated, waarbij vooral immuungerelateerde genen opvallen.
 <img width="400" height="500" alt="Volcanoplot_Casus(RA)" src="https://github.com/user-attachments/assets/41db9e32-b598-45cc-82f7-49a47df82ecd" />
 
-* figuur 2 Volcano plot *
+*figuur 2 Volcano plot*
 
+De GO verrijkingsannalyse bevestigd het beeld dat de volcano plot schetst en laat zien dat de betrokken genen voornamelijk geassocieerd zijn met de immuunrespons, zoals lymfocyten, adaptieve imuunrespons en immuunreceptor signalen. Dit kan wijzen op een sterke activatie van zowel T als B cellen in RA.
+<img width="2400" height="1800" alt="GO_plot" src="https://github.com/user-attachments/assets/367c1b9c-4a4b-4077-9530-7fb51afd0e56" />
+
+De KEGG pathway ondersteund de bevindingen van de GO analyse en de volcano plot en toont een verrijking van de belangrijke singaalroutes zoals MAPK en PI3K-AKt die en belangrijke rol spelen in ontsteking. Daarnaast worden er pathways gevonden die overlappen met infectiereponsen, wat duidt op een algemene immuunactiviteit.
+<img width="2400" height="1800" alt="kegg_pathway_plot" src="https://github.com/user-attachments/assets/a0b3eac1-d284-4eb8-8797-da3767832458" />
+
+*figuur 3 KEGG pathwat+y*
 # Conclusie
 
 ## Samengevat
