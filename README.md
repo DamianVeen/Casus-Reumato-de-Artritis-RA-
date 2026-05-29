@@ -6,7 +6,7 @@ De exacte oorzaak van RA is nog niet volledig bekend, maar onderzoek laat zien d
 
 Bij RA spelen verschillende intracellulaire signaalroutes een belangrijke rol in het ontstaan en onderhouden van ontstekingen. Een van deze signaalroutes is de JAK-STAT signaalroute. Deze pathway wordt geactiveerd door cytokinen zoals interleukine 6 (IL-6) en interferonen. Activatie van JAK-STAT zorgt ervoor dat ontstekingsgenen in de celkern worden geactiveerd, waardoor chronische ontstekingen in de gewrichten ontstaan (Ciobanu et al., 2020). Het doel van dit onderzoek is om met behulp van RNA-sequencingdata, geanalyseerd in R, te bepalen welke genen en biologische pathways significant verschillen in expressie tussen synoviumbiopten van RA patiënten en gezonde controles.
 
-## Beheren
+# Beheren
 * `Bronnen` - Hier staat een Word-document met de verwijzingen naar alle gebruikte bronnen.
 * `Grafieken`- Hier staan alle gemaakt grafieken.
 * `R_script`- Hier staan de gebruikte R scripten.
