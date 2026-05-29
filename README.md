@@ -18,6 +18,7 @@ Voor de visualisatie van de resultaten is een volcano plot gemaakt met behulp va
 De gebruikte scrips(link), ruwe data(link) en tussen bestanden zijn opgenomen in de githubpagina.
 
 <img width="1920" height="1080" alt="Flowchart" src="https://github.com/user-attachments/assets/7998f721-05a1-4560-8429-6b51962a7acb" />
+
 * figuur 1 flowchart *
 
 # Resultaten
@@ -27,7 +28,7 @@ De KEGG pathway ondersteund de bevindingen van de GO analyse en de volcano plot 
 
 <img width="400" height="500" alt="Volcanoplot_Casus(RA)" src="https://github.com/user-attachments/assets/41db9e32-b598-45cc-82f7-49a47df82ecd" />
 
-*figuur... *
+* figuur 2 Volcano plot *
 
 # Conclusie
 
