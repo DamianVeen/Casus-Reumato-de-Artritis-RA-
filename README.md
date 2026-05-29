@@ -14,13 +14,13 @@ Bij RA spelen verschillendde intracellulaire signaalroutes een belangrijke rol i
 * `Ruwe data`- Hier staan de ruwe data en de BAM bestanden die gemaakt zijn.
 
 # Methode
-Voor de analyse is er gebruikt gemaakt van RNA seqeucingdata afkomstig van synoviumbiopten. De data is afkomstig van vier gezonde personen en vier patiënten met reumatoïde artritis (RA). De verkregen ruwe sequencingdata werden aangeleverd als FastQ bestanden (link) Met behulp van het Rsubread pakket (versie 2.24.0) zijn de reads uitgelijnd tegen het humane referentie genoom GRCh38.p14 (link). Voor elk bestand werd vervolgens een BAM bestand gemaakt. Deze bestanden worden gesorteerd en geïdexeerd.
+Voor de analyse is er gebruikt gemaakt van RNA seqeucingdata afkomstig van synoviumbiopten. De data is afkomstig van vier gezonde personen en vier patiënten met reumatoïde artritis (RA). De verkregen ruwe sequencingdata werden aangeleverd als [FastQ bestanden] (Ruwe_Data\Data_raw-RA) Met behulp van het Rsubread pakket (versie 2.24.0) zijn de reads uitgelijnd tegen het humane referentie genoom [GRCh38.p14](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/). Voor elk bestand werd vervolgens een BAM bestand gemaakt. Deze bestanden worden gesorteerd en geïdexeerd.
 
 Met behulp van de functie Featurecounts werd het aantal reads per gen bepaald op basis van de beschikbare GTF annotatie. De verkregen data werden samengevoegd tot een countmatrix om vervolgens gekoppeld te worden aan de bijbhorende metadata van de monsters. Om verschillen in genexpressie tussen beide groepen te onderzoeken, is een differentiële genexpressie annalyse uitgevoerd met het pakket DEseq2 (versie 1.50.2). Hierbij werd de genexpressie van genen in de RA groep vergeleken met de controlegropen. Genen met een aangepaste P waarde <0,05 worden beschouwd als significant verschillend in expressie.
 
 Voor de visualisatie van de resultaten is een volcano plot gemaakt met behulp van het EnhancedVolcano pakket (versie 1.28.2). Verder is er een Gene Ontology(GO) analyse en een KEGG-pathway analyse uitgevoerd op de significante genen om inzicht te krijgen in de signaalroutes en biologische processen die betrokken zijn bij Reumatoïde artritis(RA).
 
-De gebruikte scrips(link), ruwe data(link) en tussen bestanden zijn opgenomen in de githubpagina.
+De gebruikte [scrips](R_script), [ruwe data](Ruwe_Data) en tussen bestanden zijn opgenomen in de githubpagina.
 
 <img width="1920" height="1080" alt="Flowchart" src="https://github.com/user-attachments/assets/7998f721-05a1-4560-8429-6b51962a7acb" />
 
@@ -53,3 +53,6 @@ Deze resultaten bevestigen dat RA een immuungemedieerde ziekte is, waarbij verst
 
 ## Samengevat
 De resulaten laten zien dat reumatoïde artritis gekenmerkt is wordt door sterke veranderingen in genexpressie, waarbij imuun en ontstekkingsprocessen de meeste veranderingen lieten zien.
+
+# Aanbevelingen
+Er wordt aanbevolen om een grotere groep patiënten te onderzoeken. Op deze manier vallen uitschieters beter op. Verder wordt er aanbevolen om de uitschietende genen specifiek te onderzoeken.
