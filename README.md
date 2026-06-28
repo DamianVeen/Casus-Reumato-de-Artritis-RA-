@@ -23,7 +23,7 @@ De gebruikte [scrips](R_script), [ruwe data](Ruwe_Data) en tussenbestanden zijn 
 
 <img width="1920" height="1080" alt="Flowchart" src="https://github.com/user-attachments/assets/7998f721-05a1-4560-8429-6b51962a7acb" />
 
-*figuur 1. flowchart*
+*figuur 1. Stroomdiagram van de RNA-seq analyse, waarin stappen van ruwe data tot significante genen en interpretatie (GO en KEGG) worden weergegeven.*
 
 # Resultaten
 
