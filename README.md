@@ -47,6 +47,9 @@ De KEGG pathway ondersteunt de bevindingen van de GO-analyse en de volcano plot 
 
 *figuur 3 KEGG pathway*
 
+
+
+
 # Conclusie
 Op basis van de RNA-sequencinganalyse kan worden geconcludeerd dat reumatoïde artritis gepaard gaat met aanzienlijke veranderingen in genexpressie in het synovium. Zowel de differentiële genexpressieanalyse als de GO- en KEGG-verrijkingsanalyses tonen aan dat vooral immuun- en ontstekingsprocessen sterk geactiveerd zijn.
 Met name de betrokkenheid van T- en B-lymfocyten en belangrijke signaalroutes zoals PI3K-Akt en MAPK onderstrepen de centrale rol van het immuunsysteem in de pathofysiologie van RA. Daarnaast wijzen de gevonden infectiegerelateerde pathways op een algemene activatie van immuunmechanismen.
