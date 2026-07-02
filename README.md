@@ -45,9 +45,13 @@ De KEGG pathway ondersteunt de bevindingen van de GO-analyse en de volcano plot 
 
 <img width="400" height="350" alt="kegg_pathway_plot" src="https://github.com/user-attachments/assets/a0b3eac1-d284-4eb8-8797-da3767832458" />
 
-*figuur 3 KEGG pathway*
+*figuur 4 KEGG pathway*
 
+Figuur 5 laat zien dat meerdere proinflammatoire cytokinen, waaronder TNFα, IL1β, IL6 en IFNγ, verhoogd tot expressie kwamen. Daarnaast werden diverse chemokinen, waaronder CCL2, CCL13, CCL20, CXCL1 en IL8, opgereguleerd. Deze veranderingen wijzen op een verhoogde activatie van ontstekingsroutes en rekrutering van immuuncellen naar het synovium.
 
+<img width="1492" height="859" alt="pathview casus RA" src="https://github.com/user-attachments/assets/649c22d2-77cb-497f-b6af-0f1a4079d661" />
+
+*Figuur 5. KEGG Pathview-analyse van de rheumatoid arthritis-signaalroute. Rood gekleurde genen zijn opgereguleerd en groen gekleurde genen zijn neerwaarts gereguleerd ten opzichte van de controlegroep. De resultaten tonen een verhoogde expressie van genen betrokken bij immuunactivatie, cytokinesignalering, leukocytenmigratie en gewrichtsontsteking, passend bij de pathofysiologie van reumatoïde artritis.*
 
 
 # Conclusie
