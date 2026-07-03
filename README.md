@@ -48,11 +48,12 @@ De GO-verrijkingsanalyse bevestigt het beeld dat de volcano plot schetst en laat
 *figuur 3 GO annalyse. Significante biologische processen worden weergegeven op basis van differentieel tot expressie komende genen. De GeneRatio (x-as) geeft de verhouding van betrokken genen weer, terwijl de puntgrootte het absolute aantal genen per categorie representeert. De kleurenschaal geeft de aangepaste p-waarde (padj) weer, waarbij lagere waarden hogere significantie aangeven.*
 
 ## Ontstekingsgerelateerde signaalroutes zijn verhoogd in RA
-De KEGG pathway ondersteunt de bevindingen van de GO-analyse en de volcano plot en toont een verrijking van belangrijke signaalroutes zoals MAPK en PI3K-Akt, die een belangrijke rol spelen in ontsteking. Daarnaast worden er pathways gevonden die overlappen met infectieresponsen, wat duidt op een algemene immuunactiviteit.
+De KEGG pathway ondersteunt de bevindingen van de GO-analyse en de volcano plot en toont een verrijking van belangrijke signaalroutes zoals MAPK en PI3K-Akt, die een belangrijke rol spelen in ontsteking. Deze pathways spelen een belangrijke rol bij cytokinesignalering, celproliferatie en immuunactivatie. Activatie van deze routes draagt bij aan de productie van ontstekingsmediatoren en het in stand houden van de chronische ontstekingsreactie die kenmerkend is voor reumatoïde artritis(Garcia et al., 2020; Ding et al., 2024). Daarnaast worden er pathways gevonden die overlappen met infectieresponsen, wat duidt op een algemene immuunactiviteit.
 
 <img width="400" height="350" alt="kegg_pathway_plot" src="https://github.com/user-attachments/assets/a0b3eac1-d284-4eb8-8797-da3767832458" />
 
 *figuur 4 KEGG pathway. De plot toont KEGG-pathways op basis van differentieel tot expressie komende genen. De x-as geeft het percentage genen weer dat betrokken is bij elke pathway, terwijl de grootte van de punten het aantal genen (count) representeert. De kleur geeft de aangepaste p-waarde (padj) weer, waarbij lagere waarden duiden op hogere significantie.*
+
 
 ## Cytokinesignalering speelt een centrale rol binnen de RA pathway
 Figuur 5 laat zien dat meerdere proinflammatoire cytokinen, waaronder TNFα, IL1β, IL6 en IFNγ, verhoogd tot expressie kwamen. Daarnaast werden diverse chemokinen, waaronder CCL2, CCL13, CCL20, CXCL1 en IL8, opgereguleerd. Deze veranderingen wijzen op een verhoogde activatie van ontstekingsroutes en rekrutering van immuuncellen naar het synovium.
@@ -81,7 +82,7 @@ De resultaten ondersteunen daarmee het huidige inzicht dat reumatoïde artritis 
 
 
 ## Samengevat
-Dit onderzoek laat zien dat reumatoïde artritis wordt gekenmerkt door sterke transcriptomische veranderingen die voornamelijk betrekking hebben op immuun- en ontstekingsprocessen. De geïdentificeerde genen en pathways vormen potentiële aanknopingspunten voor verder onderzoek naar ziekteprocessen en toekomstige therapeutische strategieën
+Dit onderzoek laat zien dat reumatoïde artritis wordt gekenmerkt door sterke transcriptomische veranderingen die voornamelijk betrekking hebben op immuun- en ontstekingsprocessen. De geïdentificeerde genen en pathways vormen potentiële aanknopingspunten voor verder onderzoek naar ziekteprocessen en toekomstige therapeutische strategieën. 
 
 # Aanbevelingen
-Een beperking van dit onderzoek is de kleine steekproefomvang van vier patiënten en vier controles, waardoor de resultaten met voorzichtigheid moeten worden geïnterpreteerd. Toekomstig onderzoek met een groter aantal patiëntenmonsters kan de betrouwbaarheid van de gevonden genen en pathways verhogen.
+Een beperking van dit onderzoek is de kleine steekproefomvang van vier patiënten en vier controles, waardoor de resultaten met voorzichtigheid moeten worden geïnterpreteerd. Toekomstig onderzoek met een groter aantal patiëntenmonsters kan de betrouwbaarheid van de gevonden genen en pathways verhogen. Daarnaast kan een qPCR worden uitgevoerd om de verhoogde expressie van belangrijke genen, zoals TNF, IL6 en IL1B, onafhankelijk te bevestigen.
