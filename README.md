@@ -41,7 +41,7 @@ Onder de sterkst opgereguleerde genen bevonden zich meerdere
 immunoglobulinegenen, waaronder IGHV3-53, IGKV1-39, IGKV3D-15 en
 IGHV6-1. Dit wijst op een verhoogde activiteit van B-cellen en
 antilichaamgerelateerde immuunprocessen binnen het synovium van
-RA-patiënten(Mauri & Ehrenstein, 2007).
+RA-patiënten (Mauri & Ehrenstein, 2007).
 
 <img width="400" height="500" alt="Volcanoplot_Casus(RA)" src="https://github.com/user-attachments/assets/41db9e32-b598-45cc-82f7-49a47df82ecd" />
 
