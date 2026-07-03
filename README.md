@@ -35,7 +35,7 @@ De differentiële genexpressieanalyse identificeerde 5119 significant verschille
 
 
 ##  Immuunrespons en lymfocytactivatie zijn verhoogd in RA synovium
-De GO-analyse liet verrijking zien van processen betrokken bij de adaptieve immuunrespons, lymfocytactivatie en immuunreceptorsignalering. Deze bevindingen wijzen op verhoogde activiteit van zowel T- als B-cellen binnen het RA-synovium.
+De GO-analyse liet een verhoging zien van processen betrokken bij de adaptieve immuunrespons, lymfocytactivatie en immuunreceptorsignalering. Deze bevindingen wijzen op verhoogde activiteit van zowel T- als B-cellen binnen het RA-synovium.
 
 <img width="400" height="350" alt="GO_plot" src="https://github.com/user-attachments/assets/367c1b9c-4a4b-4077-9530-7fb51afd0e56" />
 
@@ -68,7 +68,7 @@ Figuur 5 laat zien dat meerdere proinflammatoire cytokinen, waaronder TNFα, IL1
 *Tabel 1. laat zien dat meerdere sterk opgereguleerde genen betrokken zijn bij cytokinesignalering en immuuncelrekrutering. Vooral TNF, IL6 en IL1B zijn bekende ontstekingsmediatoren die een belangrijke rol spelen in de pathogenese van reumatoïde artritis. De verhoogde expressie van chemokinen zoals CCL20 en CXCL8 wijst daarnaast op verhoogde migratie van immuuncellen naar het ontstoken synovium.*
 
 # Conclusie
-De RNA-sequencinganalyse identificeerde 5119 significant verschillend geëxprimeerde genen tussen RA-patiënten en gezonde controles. GO-, KEGG- en Pathview-analyses lieten zien dat vooral immuunactivatie, cytokinesignalering en ontstekingsprocessen verhoogd zijn. Verhoogde expressie van genen zoals TNF, IL6, IL1B, CCL20 en CXCL8 ondersteunt de centrale rol van immuun- en ontstekingsroutes in de pathogenese van reumatoïde artritis.
+De RNA-sequencinganalyse identificeerde 5119 significant verschillende geëxprimeerde genen tussen RA-patiënten en gezonde controles. GO-, KEGG- en Pathview-analyses lieten zien dat vooral immuunactivatie, cytokinesignalering en ontstekingsprocessen verhoogd zijn. Verhoogde expressie van genen zoals TNF, IL6, IL1B, CCL20 en CXCL8 ondersteunt de centrale rol van immuun- en ontstekingsroutes in de pathogenese van reumatoïde artritis.
 
 ## Samengevat
 Dit onderzoek laat zien dat reumatoïde artritis wordt gekenmerkt door sterke transcriptomische veranderingen die voornamelijk betrekking hebben op immuun- en ontstekingsprocessen. De geïdentificeerde genen en pathways vormen potentiële aanknopingspunten voor verder onderzoek naar ziekteprocessen en toekomstige therapeutische strategieën. 
