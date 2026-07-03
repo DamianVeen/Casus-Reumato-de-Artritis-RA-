@@ -13,7 +13,7 @@ Verschillende signaalroutes spelen een belangrijke rol in de pathogenese van RA,
 * `Ruwe_Data`- Hier staan de ruwe data en de BAM bestanden die gemaakt zijn.
 
 # Methode
-Voor de analyse is er gebruikt gemaakt van RNA-seqeuncingdata afkomstig van synoviumbiopten. De data is afkomstig van vier gezonde personen en vier patiënten met reumatoïde artritis (RA). De verkregen ruwe sequencingdata werden aangeleverd als [FastQ bestanden](Ruwe_Data\Data_raw-RA). Met behulp van het Rsubread pakket (versie 2.24.0) zijn de reads uitgelijnd tegen het humane referentie genoom [GRCh38.p14](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/). Voor elk bestand werd vervolgens een BAM bestand gemaakt. Deze bestanden worden gesorteerd en geïdexeerd.
+Voor de analyse is er gebruikt gemaakt van RNA-sequencingdata afkomstig van synoviumbiopten. De data is afkomstig van vier gezonde personen en vier patiënten met reumatoïde artritis (RA). De verkregen ruwe sequencingdata werden aangeleverd als [FastQ bestanden](Ruwe_Data\Data_raw-RA). Met behulp van het Rsubread pakket (versie 2.24.0) zijn de reads uitgelijnd tegen het humane referentie genoom [GRCh38.p14](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/). Voor elk bestand werd vervolgens een BAM bestand gemaakt. Deze bestanden worden gesorteerd en geïdexeerd.
 
 Met behulp van de functie FeatureCounts werd het aantal reads per gen bepaald op basis van de beschikbare GTF-annotatie. De verkregen data werden samengevoegd tot een countmatrix om vervolgens gekoppeld te worden aan de bijbehorende metadata van de monsters. Om verschillen in genexpressie tussen beide groepen te onderzoeken, is een differentiële genexpressieanalyse uitgevoerd met het pakket DESeq2 (versie 1.50.2). Hierbij werd de genexpressie van genen in de RA-groep vergeleken met de controlegroepen. Genen met een aangepaste p-waarde < 0,05 worden beschouwd als significant verschillend in expressie.
 
@@ -27,10 +27,9 @@ De gebruikte [scripts](R_script), [ruwe data](Ruwe_Data) en tussenbestanden zijn
 
 # Resultaten
 ## Differentiële genexpressie toont sterke transcriptomische veranderingen in RA
-De differentiële genexpressieanalyse identificeerde 5119 significant verschillend geëxprimeerde genen, waarvan 2525 opgereguleerd en 2594 neerwaarts gereguleerd. Meerdere immunoglobulinegenen (IGHV3-53, IGKV1-39, IGKV3D-15 en IGHV6-1) behoorden tot de sterkst opgereguleerde genen, wat wijst op verhoogde B-celactiviteit (Mauri & Ehrenstein, 2007)
+De differentiële genexpressieanalyse identificeerde 5119 significant verschillend geëxprimeerde genen, waarvan 2525 opgereguleerd en 2594 neerwaarts gereguleerd. Meerdere immunoglobulinegenen (IGHV3-53, IGKV1-39, IGKV3D-15 en IGHV6-1) behoorden tot de sterkst opgereguleerde genen, wat wijst op verhoogde B-celactiviteit (Mauri & Ehrenstein, 2007).
 
 <img width="400" height="500" alt="Volcanoplot_Casus(RA)" src="https://github.com/user-attachments/assets/41db9e32-b598-45cc-82f7-49a47df82ecd" />
-
 
 *Figuur 2. Volcano plot van differentieel geëxprimeerde genen tussen RA-patiënten en gezonde controles. De x-as geeft de log₂ fold change weer en de y-as de -log10 aangepaste p-waarde. In totaal werden 5119 significant differentieel geëxprimeerde genen gevonden (padj < 0,05), waarvan 2525 opgereguleerd en 2594 neerwaarts gereguleerd. Rode punten vertegenwoordigen significante genen.*
 
@@ -40,7 +39,7 @@ De GO-analyse liet verrijking zien van processen betrokken bij de adaptieve immu
 
 <img width="400" height="350" alt="GO_plot" src="https://github.com/user-attachments/assets/367c1b9c-4a4b-4077-9530-7fb51afd0e56" />
 
-*figuur 3 GO annalyse. Significante biologische processen worden weergegeven op basis van differentieel tot expressie komende genen. De GeneRatio (x-as) geeft de verhouding van betrokken genen weer, terwijl de puntgrootte het absolute aantal genen per categorie representeert. De kleurenschaal geeft de aangepaste p-waarde (padj) weer, waarbij lagere waarden hogere significantie aangeven.*
+*figuur 3. GO annalyse. Significante biologische processen worden weergegeven op basis van differentieel tot expressie komende genen. De GeneRatio (x-as) geeft de verhouding van betrokken genen weer, terwijl de puntgrootte het absolute aantal genen per categorie representeert. De kleurenschaal geeft de aangepaste p-waarde (padj) weer, waarbij lagere waarden hogere significantie aangeven.*
 
 ## Ontstekingsgerelateerde signaalroutes zijn verhoogd in RA
 De KEGG-analyse identificeerde meerdere ontstekingsgerelateerde pathways, waaronder de MAPK- en PI3K-Akt-signaalroutes. Deze pathways spelen een belangrijke rol bij cytokinesignalering, immuunactivatie en ontsteking. Activatie van deze routes draagt bij aan het ontstaan en onderhouden van chronische ontstekingsreacties bij RA (Garcia et al., 2020; Ding et al., 2024).
@@ -48,7 +47,6 @@ De KEGG-analyse identificeerde meerdere ontstekingsgerelateerde pathways, waaron
 <img width="400" height="350" alt="kegg_pathway_plot" src="https://github.com/user-attachments/assets/a0b3eac1-d284-4eb8-8797-da3767832458" />
 
 *figuur 4 KEGG pathway. De plot toont KEGG-pathways op basis van differentieel tot expressie komende genen. De x-as geeft het percentage genen weer dat betrokken is bij elke pathway, terwijl de grootte van de punten het aantal genen (count) representeert. De kleur geeft de aangepaste p-waarde (padj) weer, waarbij lagere waarden duiden op hogere significantie.*
-
 
 ## Cytokinesignalering speelt een centrale rol binnen de RA pathway
 Figuur 5 laat zien dat meerdere proinflammatoire cytokinen, waaronder TNFα, IL1β, IL6 en IFNγ, verhoogd tot expressie kwamen. Daarnaast werden diverse chemokinen, waaronder CCL2, CCL13, CCL20, CXCL1 en IL8, opgereguleerd. Deze veranderingen wijzen op een verhoogde activatie van ontstekingsroutes en rekrutering van immuuncellen naar het synovium.
@@ -69,10 +67,8 @@ Figuur 5 laat zien dat meerdere proinflammatoire cytokinen, waaronder TNFα, IL1
 
 *Tabel 1. laat zien dat meerdere sterk opgereguleerde genen betrokken zijn bij cytokinesignalering en immuuncelrekrutering. Vooral TNF, IL6 en IL1B zijn bekende ontstekingsmediatoren die een belangrijke rol spelen in de pathogenese van reumatoïde artritis. De verhoogde expressie van chemokinen zoals CCL20 en CXCL8 wijst daarnaast op verhoogde migratie van immuuncellen naar het ontstoken synovium.*
 
-
 # Conclusie
 De RNA-sequencinganalyse identificeerde 5119 significant verschillend geëxprimeerde genen tussen RA-patiënten en gezonde controles. GO-, KEGG- en Pathview-analyses lieten zien dat vooral immuunactivatie, cytokinesignalering en ontstekingsprocessen verhoogd zijn. Verhoogde expressie van genen zoals TNF, IL6, IL1B, CCL20 en CXCL8 ondersteunt de centrale rol van immuun- en ontstekingsroutes in de pathogenese van reumatoïde artritis.
-
 
 ## Samengevat
 Dit onderzoek laat zien dat reumatoïde artritis wordt gekenmerkt door sterke transcriptomische veranderingen die voornamelijk betrekking hebben op immuun- en ontstekingsprocessen. De geïdentificeerde genen en pathways vormen potentiële aanknopingspunten voor verder onderzoek naar ziekteprocessen en toekomstige therapeutische strategieën. 
