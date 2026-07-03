@@ -8,7 +8,7 @@ Bij RA spelen verschillende intracellulaire signaalroutes een belangrijke rol in
 
 # Beheren
 
-Deze GitHub-repository is opgezet om de analyse reproduceerbaar en transparant te maken. Data, scripts en resultaten zijn gescheiden opgeslagen zodat iedere stap van de analyse eenvoudig kan worden gecontroleerd en opnieuw uitgevoerd.
+Deze GitHub is opgezet om de analyse reproduceerbaar en transparant te maken. Data, scripts en resultaten zijn gescheiden opgeslagen zodat iedere stap van de analyse eenvoudig kan worden gecontroleerd en opnieuw uitgevoerd.
 
 * `Bronnen` - Hier staat een Word-document met de verwijzingen naar alle gebruikte bronnen.
 * `Grafieken`- Hier staan alle gemaakte grafieken.
