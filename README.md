@@ -26,7 +26,7 @@ De gebruikte [scrips](R_script), [ruwe data](Ruwe_Data) en tussenbestanden zijn 
 *figuur 1. Stroomdiagram van de RNA-seq analyse, waarin stappen van ruwe data tot significante genen en interpretatie (GO en KEGG) worden weergegeven.*
 
 # Resultaten
-
+## Differentiële genexpressie toont sterke transcriptomische veranderingen in RA
 De RNA-sequencinganalyse laat zien dat er duidelijke verschillen in genexpressie bestaan tussen RA-patiënten en de gezonde controlegroep. De volcano plot (figuur 2) toont aan dat veel genen significant veranderd zijn, zowel upregulated als downregulated, waarbij vooral immuungerelateerde genen opvallen.
 
 <img width="400" height="500" alt="Volcanoplot_Casus(RA)" src="https://github.com/user-attachments/assets/41db9e32-b598-45cc-82f7-49a47df82ecd" />
@@ -34,19 +34,19 @@ De RNA-sequencinganalyse laat zien dat er duidelijke verschillen in genexpressie
 *Figuur 2. Volcano plot van differentieel tot expressie komende genen.
 Genen met een hoge absolute log₂ fold change en lage p-waarde bevinden zich aan de bovenste linker- en rechterzijde en vertegenwoordigen de meest uitgesproken verschillen tussen RA en controle. Significante genen zijn rood weergegeven*
 
-
+##  Immuunrespons en lymfocytactivatie zijn verhoogd in RA synovium
 De GO-verrijkingsanalyse bevestigt het beeld dat de volcano plot schetst en laat zien dat de betrokken genen voornamelijk geassocieerd zijn met de immuunrespons, zoals lymfocyten, adaptieve immuunrespons en immuunreceptorsignalen. Dit kan wijzen op een sterke activatie van zowel T- als B-cellen in RA.
 
 <img width="400" height="350" alt="GO_plot" src="https://github.com/user-attachments/assets/367c1b9c-4a4b-4077-9530-7fb51afd0e56" />
 
 *figuur 3 GO annalyse*
-
+## Ontstekingsgerelateerde signaalroutes zijn verhoogd in RA
 De KEGG pathway ondersteunt de bevindingen van de GO-analyse en de volcano plot en toont een verrijking van belangrijke signaalroutes zoals MAPK en PI3K-Akt, die een belangrijke rol spelen in ontsteking. Daarnaast worden er pathways gevonden die overlappen met infectieresponsen, wat duidt op een algemene immuunactiviteit.
 
 <img width="400" height="350" alt="kegg_pathway_plot" src="https://github.com/user-attachments/assets/a0b3eac1-d284-4eb8-8797-da3767832458" />
 
 *figuur 4 KEGG pathway*
-
+## Cytokinesignalering speelt een centrale rol binnen de RA pathway
 Figuur 5 laat zien dat meerdere proinflammatoire cytokinen, waaronder TNFα, IL1β, IL6 en IFNγ, verhoogd tot expressie kwamen. Daarnaast werden diverse chemokinen, waaronder CCL2, CCL13, CCL20, CXCL1 en IL8, opgereguleerd. Deze veranderingen wijzen op een verhoogde activatie van ontstekingsroutes en rekrutering van immuuncellen naar het synovium.
 
 <img width="1492" height="859" alt="pathview casus RA" src="https://github.com/user-attachments/assets/649c22d2-77cb-497f-b6af-0f1a4079d661" />
@@ -54,13 +54,14 @@ Figuur 5 laat zien dat meerdere proinflammatoire cytokinen, waaronder TNFα, IL1
 *Figuur 5. KEGG Pathview-analyse van de rheumatoid arthritis-signaalroute. Rood gekleurde genen zijn opgereguleerd en groen gekleurde genen zijn neerwaarts gereguleerd ten opzichte van de controlegroep. De resultaten tonen een verhoogde expressie van genen betrokken bij immuunactivatie, cytokinesignalering, leukocytenmigratie en gewrichtsontsteking, passend bij de pathofysiologie van reumatoïde artritis.*
 
 
-# Conclusie
-Op basis van de RNA-sequencinganalyse kan worden geconcludeerd dat reumatoïde artritis gepaard gaat met aanzienlijke veranderingen in genexpressie in het synovium. Zowel de differentiële genexpressieanalyse als de GO- en KEGG-verrijkingsanalyses tonen aan dat vooral immuun- en ontstekingsprocessen sterk geactiveerd zijn.
-Met name de betrokkenheid van T- en B-lymfocyten en belangrijke signaalroutes zoals PI3K-Akt en MAPK onderstrepen de centrale rol van het immuunsysteem in de pathofysiologie van RA. Daarnaast wijzen de gevonden infectiegerelateerde pathways op een algemene activatie van immuunmechanismen.
-Deze resultaten bevestigen dat RA een immuungemedieerde ziekte is, waarbij verstoringen in genexpressie bijdragen aan chronische ontsteking in het synovium.
+# conclusie
+Dit onderzoek had als doel om met behulp van RNA sequencing te bepalen welke genen en biologische pathways verschillen tussen synoviumweefsel van patiënten met reumatoïde artritis (RA) en gezonde controles. De differentiële genexpressieanalyse liet zien dat RA gepaard gaat met veranderingen in genexpressie, waarbij vooral genen betrokken bij immuunactivatie en ontstekingsprocessen verhoogd tot expressie kwamen.
+De GO analyse toonde een sterke verhoging van biologische processen gerelateerd aan de adaptieve immuunrespons, lymfocytactivatie en immuunreceptorsignalering. Daarnaast identificeerde de KEGG analyse belangrijke ontstekingsgerelateerde pathways, waaronder de PI3K-Akt- en MAPK-signaalroutes. De Pathview analyse van de rheumatoid arthritis pathway bevestigde deze bevindingen en liet verhoogde expressie zien van verschillende pro-inflammatoire cytokinen en chemokinen, waaronder TNF, IL1β, IL6, IFNγ, CCL2, CCL20 en CXCL8. Deze genen spelen een belangrijke rol bij immuuncelrekrutering, cytokinesignalering en het onderhouden van chronische gewrichtsontsteking.
+De resultaten ondersteunen daarmee het huidige inzicht dat reumatoïde artritis een immuungemedieerde aandoening is waarbij ontregeling van ontstekings en immuunprocessen centraal staat. De gevonden veranderingen in genexpressie weerspiegelen de actieve ontstekingsstatus van het synovium.
+
 
 ## Samengevat
-De resultaten laten zien dat reumatoïde artritis gekenmerkt wordt door sterke veranderingen in genexpressie, waarbij immuun- en ontstekingsprocessen de meeste veranderingen laten zien.
+Dir onderzoek laat zien dat reumatoïde artritis wordt gekenmerkt door sterke transcriptomische veranderingen die voornamelijk betrekking hebben op immuun- en ontstekingsprocessen. De geïdentificeerde genen en pathways vormen potentiële aanknopingspunten voor verder onderzoek naar ziekteprocessen en toekomstige therapeutische strategieën
 
 # Aanbevelingen
-Er wordt aanbevolen om een grotere groep patiënten te onderzoeken. Op deze manier vallen uitschieters beter op. Verder wordt er aanbevolen om de uitschietende genen specifiek te onderzoeken.
+Een beperking van dit onderzoek is de kleine steekproefomvang van vier patiënten en vier controles, waardoor de resultaten met voorzichtigheid moeten worden geïnterpreteerd. Toekomstig onderzoek met een grotere hoeveelheden patiënten monster kan de betrouwbaarheid van de gevonden genen en pathways verhogen.
