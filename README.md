@@ -8,6 +8,8 @@ Bij RA spelen verschillende intracellulaire signaalroutes een belangrijke rol in
 
 # Beheren
 
+Deze GitHub-repository is opgezet om de analyse reproduceerbaar en transparant te maken. Data, scripts en resultaten zijn gescheiden opgeslagen zodat iedere stap van de analyse eenvoudig kan worden gecontroleerd en opnieuw uitgevoerd.
+
 * `Bronnen` - Hier staat een Word-document met de verwijzingen naar alle gebruikte bronnen.
 * `Grafieken`- Hier staan alle gemaakte grafieken.
 * `R_script`- Hier staan de gebruikte R scripten.
@@ -28,30 +30,14 @@ De gebruikte [scripts](R_script), [ruwe data](Ruwe_Data) en tussenbestanden zijn
 
 # Resultaten
 ## Differentiële genexpressie toont sterke transcriptomische veranderingen in RA
-De differentiële genexpressieanalyse identificeerde 5119 significant
-verschillend geëxprimeerde genen (padj < 0,05) tussen RA-patiënten en
-gezonde controles. Van deze genen waren 2525 genen upregulated en
-2594 genen downregulated. De volcano plot (Figuur 2) laat zien
-dat zowel sterke toe- als afnames in genexpressie voorkomen. Verschillende
-van de meest opgereguleerde genen zijn betrokken bij immuunactivatie en
-antilichaamproductie, wat past bij het auto-immuunkarakter van
-reumatoïde artritis.
+De differentiële genexpressieanalyse identificeerde 5119 significant verschillend geëxprimeerde genen (padj < 0,05) tussen RA-patiënten en gezonde controles. Van deze genen waren 2525 genen upregulated en 2594 genen downregulated. De volcano plot (Figuur 2) laat zien dat zowel sterke toe- als afnames in genexpressie voorkomen. Verschillende van de meest opgereguleerde genen zijn betrokken bij immuunactivatie en antilichaamproductie, wat past bij het auto-immuunkarakter van reumatoïde artritis.
 
-Onder de sterkst opgereguleerde genen bevonden zich meerdere
-immunoglobulinegenen, waaronder IGHV3-53, IGKV1-39, IGKV3D-15 en
-IGHV6-1. Dit wijst op een verhoogde activiteit van B-cellen en
-antilichaamgerelateerde immuunprocessen binnen het synovium van
-RA-patiënten (Mauri & Ehrenstein, 2007).
+Onder de sterkst opgereguleerde genen bevonden zich meerdere immunoglobulinegenen, waaronder IGHV3-53, IGKV1-39, IGKV3D-15 en IGHV6-1. Dit wijst op een verhoogde activiteit van B-cellen en antilichaamgerelateerde immuunprocessen binnen het synovium van RA-patiënten (Mauri & Ehrenstein, 2007).
 
 <img width="400" height="500" alt="Volcanoplot_Casus(RA)" src="https://github.com/user-attachments/assets/41db9e32-b598-45cc-82f7-49a47df82ecd" />
 
 
-*Figuur 2. Volcano plot van differentieel geëxprimeerde genen tussen
-RA-patiënten en gezonde controles. De x-as geeft de log₂ fold change
-weer en de y-as de -log10 aangepaste p-waarde. In totaal werden 5119
-significant differentieel geëxprimeerde genen gevonden (padj < 0,05),
-waarvan 2525 opgereguleerd en 2594 neerwaarts gereguleerd. Rode punten
-vertegenwoordigen significante genen.*
+*Figuur 2. Volcano plot van differentieel geëxprimeerde genen tussen RA-patiënten en gezonde controles. De x-as geeft de log₂ fold change weer en de y-as de -log10 aangepaste p-waarde. In totaal werden 5119 significant differentieel geëxprimeerde genen gevonden (padj < 0,05), waarvan 2525 opgereguleerd en 2594 neerwaarts gereguleerd. Rode punten vertegenwoordigen significante genen.*
 
 
 ##  Immuunrespons en lymfocytactivatie zijn verhoogd in RA synovium
