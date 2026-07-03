@@ -75,7 +75,7 @@ Figuur 5 laat zien dat meerdere proinflammatoire cytokinen, waaronder TNFα, IL1
 
 *Figuur 5. KEGG Pathview analyse van de rheumatoid arthritissignaalroute. Rood gekleurde genen zijn opgereguleerd en groen gekleurde genen zijn neerwaarts gereguleerd ten opzichte van de controlegroep. De resultaten tonen een verhoogde expressie van genen betrokken bij immuunactivatie, cytokinesignalering, leukocytenmigratie en gewrichtsontsteking, passend bij de pathofysiologie van reumatoïde artritis.*
 
-### Tabel 1. Belangrijkste opgereguleerde genen binnen de RA-pathway
+### Belangrijkste opgereguleerde genen binnen de RA-pathway
 
 | Gen | Biologische functie |
 |------|------|
