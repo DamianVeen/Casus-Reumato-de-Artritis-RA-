@@ -1,14 +1,11 @@
 # Differentiële genexpressie in synovium bij reumatoïde artritis toont dominante immuun- en ontstekingsprocessen
 # Inleiding
-Reumatoïde artritis (RA) is een chronische auto-immuunziekte waarbij het immuunsysteem gezonde gewrichten aanvalt. Hierdoor ontstaan ontstekingen in onder andere de handen, polsen en knieën, wat kan leiden tot stijfheid, pijn en blijvende gewrichtsklachten. Naast gewrichtsklachten kan RA ook andere organen aantasten, zoals de longen en het hart. De ziekte heeft daardoor een grote invloed op de kwaliteit van leven van patiënten. Wereldwijd komt RA voor bij ongeveer 0,5% van de bevolking. De aandoening wordt vaker gezien bij vrouwen dan bij mannen (Almutairi et al., 2020).
 
-De exacte oorzaak van RA is nog niet volledig bekend, maar onderzoek laat zien dat zowel genetische als omgevingsfactoren een belangrijke rol spelen. Risicofactoren zoals roken, overgewicht en bepaalde infecties kunnen bijdragen aan het ontstaan van de ziekte. Daarnaast speelt het immuunsysteem een centrale rol bij de ontwikkeling van chronische ontstekingen in synoviale weefsels van gewrichten (Romão & Fonseca, 2021).
+Reumatoïde artritis (RA) is een chronische auto-immuunziekte die wordt gekenmerkt door ontsteking van het synovium en progressieve gewrichtsschade. De aandoening komt wereldwijd voor bij ongeveer 0,5% van de bevolking en treft vrouwen vaker dan mannen. Zowel genetische als omgevingsfactoren dragen bij aan het ontstaan van RA (Almutairi et al., 2020; Romão & Fonseca, 2021).
 
-Bij RA spelen verschillende intracellulaire signaalroutes een belangrijke rol in het ontstaan en onderhouden van ontstekingen. Een van deze signaalroutes is de JAK-STAT signaalroute. Deze pathway wordt geactiveerd door cytokinen zoals interleukine 6 (IL-6) en interferonen. Activatie van JAK-STAT zorgt ervoor dat ontstekingsgenen in de celkern worden geactiveerd, waardoor chronische ontstekingen in de gewrichten ontstaan (Ciobanu et al., 2020). Het doel van dit onderzoek is om met behulp van RNA-sequencingdata, geanalyseerd in R, te bepalen welke genen en biologische pathways significant verschillen in expressie tussen synoviumbiopten van RA patiënten en gezonde controles.
+Verschillende signaalroutes spelen een belangrijke rol in de pathogenese van RA, waaronder de JAK-STAT-route. Activatie van deze route door cytokinen zoals IL-6 en interferonen leidt tot verhoogde expressie van ontstekingsgenen (Ciobanu et al., 2020). Het doel van dit onderzoek was om met behulp van RNA-sequencing verschillen in genexpressie en biologische pathways tussen RA-patiënten en gezonde controles te identificeren.
 
 # Beheren
-
-Deze GitHub is opgezet om de analyse reproduceerbaar en transparant te maken. Data, scripts en resultaten zijn gescheiden opgeslagen zodat iedere stap van de analyse eenvoudig kan worden gecontroleerd en opnieuw uitgevoerd.
 
 * `Bronnen` - Hier staat een Word-document met de verwijzingen naar alle gebruikte bronnen.
 * `Grafieken`- Hier staan alle gemaakte grafieken.
@@ -30,9 +27,7 @@ De gebruikte [scripts](R_script), [ruwe data](Ruwe_Data) en tussenbestanden zijn
 
 # Resultaten
 ## Differentiële genexpressie toont sterke transcriptomische veranderingen in RA
-De differentiële genexpressieanalyse identificeerde 5119 significant verschillend geëxprimeerde genen (padj < 0,05) tussen RA-patiënten en gezonde controles. Van deze genen waren 2525 genen upregulated en 2594 genen downregulated. De volcano plot (Figuur 2) laat zien dat zowel sterke toe- als afnames in genexpressie voorkomen. Verschillende van de meest opgereguleerde genen zijn betrokken bij immuunactivatie en antilichaamproductie, wat past bij het auto-immuunkarakter van reumatoïde artritis.
-
-Onder de sterkst opgereguleerde genen bevonden zich meerdere immunoglobulinegenen, waaronder IGHV3-53, IGKV1-39, IGKV3D-15 en IGHV6-1. Dit wijst op een verhoogde activiteit van B-cellen en antilichaamgerelateerde immuunprocessen binnen het synovium van RA-patiënten (Mauri & Ehrenstein, 2007).
+De differentiële genexpressieanalyse identificeerde 5119 significant verschillend geëxprimeerde genen, waarvan 2525 opgereguleerd en 2594 neerwaarts gereguleerd. Meerdere immunoglobulinegenen (IGHV3-53, IGKV1-39, IGKV3D-15 en IGHV6-1) behoorden tot de sterkst opgereguleerde genen, wat wijst op verhoogde B-celactiviteit (Mauri & Ehrenstein, 2007)
 
 <img width="400" height="500" alt="Volcanoplot_Casus(RA)" src="https://github.com/user-attachments/assets/41db9e32-b598-45cc-82f7-49a47df82ecd" />
 
@@ -41,14 +36,14 @@ Onder de sterkst opgereguleerde genen bevonden zich meerdere immunoglobulinegene
 
 
 ##  Immuunrespons en lymfocytactivatie zijn verhoogd in RA synovium
-De GO-verrijkingsanalyse bevestigt het beeld dat de volcano plot schetst en laat zien dat de betrokken genen voornamelijk geassocieerd zijn met de immuunrespons, zoals lymfocyten, adaptieve immuunrespons en immuunreceptorsignalen. Dit kan wijzen op een sterke activatie van zowel T- als B-cellen in RA.
+De GO-analyse liet verrijking zien van processen betrokken bij de adaptieve immuunrespons, lymfocytactivatie en immuunreceptorsignalering. Deze bevindingen wijzen op verhoogde activiteit van zowel T- als B-cellen binnen het RA-synovium.
 
 <img width="400" height="350" alt="GO_plot" src="https://github.com/user-attachments/assets/367c1b9c-4a4b-4077-9530-7fb51afd0e56" />
 
 *figuur 3 GO annalyse. Significante biologische processen worden weergegeven op basis van differentieel tot expressie komende genen. De GeneRatio (x-as) geeft de verhouding van betrokken genen weer, terwijl de puntgrootte het absolute aantal genen per categorie representeert. De kleurenschaal geeft de aangepaste p-waarde (padj) weer, waarbij lagere waarden hogere significantie aangeven.*
 
 ## Ontstekingsgerelateerde signaalroutes zijn verhoogd in RA
-De KEGG pathway ondersteunt de bevindingen van de GO-analyse en de volcano plot en toont een verrijking van belangrijke signaalroutes zoals MAPK en PI3K-Akt, die een belangrijke rol spelen in ontsteking. Deze pathways spelen een belangrijke rol bij cytokinesignalering, celproliferatie en immuunactivatie. Activatie van deze routes draagt bij aan de productie van ontstekingsmediatoren en het in stand houden van de chronische ontstekingsreactie die kenmerkend is voor reumatoïde artritis(Garcia et al., 2020; Ding et al., 2024). Daarnaast worden er pathways gevonden die overlappen met infectieresponsen, wat duidt op een algemene immuunactiviteit.
+De KEGG-analyse identificeerde meerdere ontstekingsgerelateerde pathways, waaronder de MAPK- en PI3K-Akt-signaalroutes. Deze pathways spelen een belangrijke rol bij cytokinesignalering, immuunactivatie en ontsteking. Activatie van deze routes draagt bij aan het ontstaan en onderhouden van chronische ontstekingsreacties bij RA (Garcia et al., 2020; Ding et al., 2024).
 
 <img width="400" height="350" alt="kegg_pathway_plot" src="https://github.com/user-attachments/assets/a0b3eac1-d284-4eb8-8797-da3767832458" />
 
@@ -76,9 +71,7 @@ Figuur 5 laat zien dat meerdere proinflammatoire cytokinen, waaronder TNFα, IL1
 
 
 # Conclusie
-Dit onderzoek had als doel om met behulp van RNA sequencing te bepalen welke genen en biologische pathways verschillen tussen synoviumweefsel van patiënten met reumatoïde artritis (RA) en gezonde controles. De differentiële genexpressieanalyse liet zien dat RA gepaard gaat met veranderingen in genexpressie, waarbij vooral genen betrokken bij immuunactivatie en ontstekingsprocessen verhoogd tot expressie kwamen.
-De GO analyse toonde een sterke verhoging van biologische processen gerelateerd aan de adaptieve immuunrespons, lymfocytactivatie en immuunreceptorsignalering. Daarnaast identificeerde de KEGG analyse belangrijke ontstekingsgerelateerde pathways, waaronder de PI3K-Akt- en MAPK-signaalroutes. De Pathview analyse van de rheumatoid arthritis pathway bevestigde deze bevindingen en liet verhoogde expressie zien van verschillende pro-inflammatoire cytokinen en chemokinen, waaronder TNF, IL1β, IL6, IFNγ, CCL2, CCL20 en CXCL8. Deze genen spelen een belangrijke rol bij immuuncelrekrutering, cytokinesignalering en het onderhouden van chronische gewrichtsontsteking.
-De resultaten ondersteunen daarmee het huidige inzicht dat reumatoïde artritis een immuungemedieerde aandoening is waarbij ontregeling van ontstekings en immuunprocessen centraal staat. De gevonden veranderingen in genexpressie weerspiegelen de actieve ontstekingsstatus van het synovium.
+De RNA-sequencinganalyse identificeerde 5119 significant verschillend geëxprimeerde genen tussen RA-patiënten en gezonde controles. GO-, KEGG- en Pathview-analyses lieten zien dat vooral immuunactivatie, cytokinesignalering en ontstekingsprocessen verhoogd zijn. Verhoogde expressie van genen zoals TNF, IL6, IL1B, CCL20 en CXCL8 ondersteunt de centrale rol van immuun- en ontstekingsroutes in de pathogenese van reumatoïde artritis.
 
 
 ## Samengevat
